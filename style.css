@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.container {
+    width: 80%;
+    margin: 50px;
+}
+.section_top {
+    background-image: url("bg.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.section_top h2 {
+    font-size: 90px;
+}
+.section_top span {
+    margin-top: -20px;
+    font-size: 40px;
+}
+span p a {
+    margin-right: 20px;
+}
+h2 {
+    font-size: 50px;
+    padding: 15px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    padding: 10px 0px 5px;
+}
+.login_form,
+.sign_up_form {
+    padding: 0 100px;
+}
+.form_input {
+    height: 60px;
+    border: green solid 1px;
+}
+.form_input::placeholder {
+    font-size: 30px;
+    padding-left: 20px;
+}
+.comment_input[type="text"],
+.form_input[type="text"],
+.comment_input[type="email"],
+.form_input[type="email"],
+.form_input[type="password"] {
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.btn_submit {
+    width: 300px;
+    height: 60px;
+    margin: auto;
+    margin-top: 30px !important;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+.login_buttom .btn_submit {
+    width: 70%;
+    color: black;
+    background-color: gray;
+    border: none;
+}
+.home_container {
+    height: 1330px;
+    width: 1300px;
+    background-image: url("bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.items,
+.home_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 30px;
+}
+.items li {
+    list-style: none;
+    font-size: 25px;
+    margin-right: 20px;
+}
+.home_buttom {
+    margin: 0 auto;
+    width: 90%;
+    padding-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.take_me_home {
+    text-decoration: none;
+    color: white;
+}
+.food_talbe_container {
+    margin-top: 30px;
+    background-color: black;
+    padding: 30px;
+}
+.food_table {
+    color: black;
+    background-color: white;
+}
+.food_table th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+.table_btn {
+    width: 210px;
+    height: 50px;
+    border: 1px solid black;
+    font-size: 30px;
+}
+.food_img {
+    width: 150px;
+}
+.cemment_table,
+.contacts_table {
+    border-spacing: 0px;
+}
+.comment_input {
+    border: none;
+}
+.contact_page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.contacts_table {
+    border: 1px solid black;
+}
+.contacts_table td,
+tr {
+    border: none;
+}
+.profile_table {
+    width: 1100px;
+    border-spacing: 0;
+}

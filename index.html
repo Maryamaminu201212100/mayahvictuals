@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container login_container" id="login_container">
+            <div class="section_top">
+                <h2>Log-in</h2>
+                <span>
+                    <p class="top_text">
+                        <a class="take_me_home" href="#">Home ></a> sign-up >
+                    </p>
+                </span>
+            </div>
+            <div class="login_middle login_form">
+                <h2>Log in To Order Foods</h2>
+                <form action="">
+                    <label class="form_label" for="email"> Email Address</label>
+                    <input
+                        placeholder="Email"
+                        type="email"
+                        name="email"
+                        id="login_email"
+                        class="form_input"
+                    />
+                    <label class="form_label" for="Password"> Password</label>
+                    <input
+                        placeholder="Password"
+                        type="Password"
+                        name="Password"
+                        id="login_password"
+                        class="form_input"
+                    />
+                    <input
+                        type="submit"
+                        value="Submit"
+                        class="btn_submit"
+                        id="login_submin_btn"
+                    />
+                </form>
+                <div class="login_buttom">
+                    <br />
+                    <p>If you don’t have an account? Please sign-up</p>
+                    <button type="submit" class="btn_submit" id="sign_up_btn">
+                        Register Now!
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container register_container hide" id="register_container">
+            <div class="section_top">
+                <h2>Log-in</h2>
+                <span>
+                    <p class="top_text">
+                        <a class="take_me_home" href="#">Home ></a> sign-up >
+                    </p>
+                </span>
+            </div>
+            <div class="sign_up_middle sign_up_form">
+                <h2>Sign Up To Order Foods</h2>
+
+                <form action="">
+                    <label class="form_label" for="name">Full Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="sign_up_name"
+                        class="form_input"
+                    />
+                    <label class="form_label" for="email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="sign_up_email"
+                        class="form_input"
+                    />
+                    <label class="form_label" for="Password">Password</label>
+                    <input
+                        type="Password"
+                        name="Password"
+                        id="sign_up_password"
+                        class="form_input"
+                    />
+                    <input
+                        id="register_btn"
+                        type="submit"
+                        value="Register"
+                        class="btn_submit"
+                    />
+                </form>
+            </div>
+        </div>
+        <div class="container home_container hide" id="home_container">
+            <div class="home_top">
+                <h3>Mayah ameen’s vituals</h3>
+                <ul class="items">
+                    <li><a class="take_me_home" href="#">Home</a></li>
+                    <li>About</li>
+                    <li class="take_me_to_menu">Menu</li>
+                    <li class="show_profile">Profile page</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="home_buttom">
+                <div class="home_btm_div">
+                    <img src="" alt="" />
+                    <p>CAKES</p>
+                </div>
+                <div class="home_btm_div">
+                    <img src="" alt="" />
+                    <p>MAIN DISHES</p>
+                </div>
+                <div class="home_btm_div">
+                    <img src="" alt="" />
+                    <p>PANCAKES</p>
+                </div>
+                <div class="home_btm_div">
+                    <img src="" alt="" />
+                    <p>SHAKES</p>
+                </div>
+            </div>
+        </div>
+        <div class="container menu_container hide" id="menu_container">
+            <div class="section_top">
+                <span>
+                    <p class="top_text">
+                        <a class="take_me_home" href="#">HOME ></a> MENU >
+                    </p>
+                </span>
+            </div>
+            <div class="food_talbe_container">
+                <table class="food_table">
+                    <tr>
+                        <th>FOOD NAME</th>
+                        <th>CATEGORY</th>
+                        <th>PRIZE</th>
+                        <th>FOOD IMAGE</th>
+                        <th>ACTION</th>
+                    </tr>
+                    <tr>
+                        <td>PANCAKES</td>
+                        <td>BREAKFAST</td>
+                        <td>1000</td>
+                        <td><img class="food_img" src="img1.png" alt="" /></td>
+                        <td>
+                            <button
+                                data-food="pancakes"
+                                class="table_btn"
+                                id="order_btn"
+                            >
+                                Order
+                            </button>
+                            <button class="table_btn" id="comment">
+                                Comment
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>RICE AND SHREDED BEEF</td>
+                        <td>Lunch</td>
+                        <td>2500</td>
+                        <td><img class="food_img" src="img2.png" alt="" /></td>
+                        <td>
+                            <button
+                                data-food="ricdAndShrededBeef"
+                                class="table_btn"
+                                id="order_btn"
+                            >
+                                Order
+                            </button>
+                            <button class="table_btn" id="comment">
+                                Comment
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CHINES NODDLES WITH CHESSE</td>
+                        <td>Dinner</td>
+                        <td>2200</td>
+                        <td><img class="food_img" src="img3.png" alt="" /></td>
+                        <td>
+                            <button
+                                data-food="chinesNoodlesWithChesse"
+                                class="table_btn"
+                                id="order_btn"
+                            >
+                                Order
+                            </button>
+                            <button class="table_btn" id="comment">
+                                Comment
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container review_container hide" id="review_container">
+            <form action="">
+                <table class="cemment_table">
+                    <tr>
+                        <td>
+                            <h2>CUSTOMER REVIEW</h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form_label" for="commnet_food_name"
+                                >Food Name:
+                            </label>
+                            <input
+                                placeholder="Food Name"
+                                type="text"
+                                name="name"
+                                id="commnet_food_name"
+                                class="comment_input"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form_label" for="commnet_person_name"
+                                >Name:
+                            </label>
+                            <input
+                                placeholder="Your Name"
+                                type="text"
+                                name="name"
+                                id="commnet_person_name"
+                                class="comment_input"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form_label" for="comment_email"
+                                >Email:
+                            </label>
+                            <input
+                                placeholder="Your Email"
+                                type="email"
+                                name="email"
+                                id="comment_email"
+                                class="comment_input"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="form_label" for="comment_content"
+                                >Comment:
+                            </label>
+                            <input
+                                placeholder="Your Comment"
+                                type="text"
+                                name="comment_content"
+                                id="comment_content"
+                                class="comment_input"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input
+                                id="submit_comment_btn"
+                                type="submit"
+                                value="submit"
+                                class="btn_submit"
+                            />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <button type="submit" class="sign_up" id="register"></button>
+        </div>
+        <div class="container contact_page hide" id="contact_page">
+            <div class="section_top">
+                <span>
+                    <a class="take_me_home" href="#">HOME ></a> MENU >
+                </span>
+            </div>
+            <div class="contact_table" id="contact_table">
+                <table class="contacts_table">
+                    <tr>
+                        <th>CONTACT INFORMATION</th>
+                    </tr>
+                    <tr>
+                        <td>ADDRESS : c close Gwarimpa</td>
+                    </tr>
+                    <tr>
+                        <td>PHONE :0812275222</td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL : mayahameen5959@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>WEB :</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container profile hide">
+            <table class="profile_table">
+                <!-- <tr>
+                    <td>
+                        <h2>PROFILE</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="form_label" for="new_name">Name: </label>
+                        <input
+                            placeholder="Name"
+                            type="text"
+                            name="new_name"
+                            id="new_name"
+                            class="form_input"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="form_label" for="comment_email"
+                            >Email:
+                        </label>
+                        <input
+                            placeholder="Email"
+                            type="email"
+                            name="email"
+                            id="new_email"
+                            class="form_input"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="form_label" for="new_number"
+                            >Number:
+                        </label>
+                        <input
+                            placeholder="Number"
+                            type="number"
+                            name="new_number"
+                            id="new_number"
+                            class="form_input"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="form_label" for="new_address"
+                            >ADDRESS:
+                        </label>
+                        <input
+                            placeholder="Address"
+                            type="text"
+                            name="new_address"
+                            id="new_address"
+                            class="form_input"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input
+                            id="Change_details"
+                            type="submit"
+                            value="Change Details"
+                            class="btn_submit"
+                        />
+                    </td>
+                </tr> -->
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
